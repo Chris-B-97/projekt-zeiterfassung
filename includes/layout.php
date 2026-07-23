@@ -4,7 +4,7 @@ require_once __DIR__ . '/security.php';
 require_once __DIR__ . '/auth.php';
 
 function layout_start(string $title, ?array $user = null): void {
-    $appName = 'codea';
+    $appName = 'Projektzeit';
     ?><!doctype html>
 <html lang="de">
 <head>
@@ -31,7 +31,7 @@ function layout_start(string $title, ?array $user = null): void {
 <header class="border-b bg-white/80 backdrop-blur sticky top-0 z-10">
   <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
     <a href="projects.php" class="flex items-center gap-2">
-      <img src="../logo.png" alt="codea" class="h-12 w-auto">
+      <img src="../logo.png" alt="Projektzeit" class="h-12 w-auto">
     </a>
     <nav class="flex items-center gap-1 text-sm">
       <?php if ($user): ?>
